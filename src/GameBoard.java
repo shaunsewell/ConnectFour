@@ -20,7 +20,7 @@ public class GameBoard {
      * @param width The width of the game board
      * @param height  the height of the game board
      */
-    public GameBoard(int width, int height) {
+    public GameBoard(int height, int width) {
         this.boardWidth = width;
         this.boardHeight = height;
         this.board = new int[height][width];
@@ -156,6 +156,19 @@ public class GameBoard {
         }
 
         return nodeSequence;
+    }
+
+    public void printBoard() {
+
+        for(int h = 0; h < boardHeight; h++) {
+            String row = "";
+            for (int w = 0; w < boardWidth; w++) {
+                int element = board[h][w];
+                row += (String.valueOf(element));
+                row += ("|");
+            }
+            System.out.println(row);
+        }
     }
 
 }
