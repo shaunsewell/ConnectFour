@@ -160,7 +160,7 @@ public class GameBoard {
 
     public void printBoard() {
 
-        for(int h = 0; h < boardHeight; h++) {
+        for(int h = boardHeight - 1; h >= 0; h--) {
             String row = "";
             for (int w = 0; w < boardWidth; w++) {
                 int element = board[h][w];
