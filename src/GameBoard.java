@@ -123,7 +123,7 @@ public class GameBoard {
         }
 
         // Back Diagonal
-        for(int row = 3; row < boardHeight - 3; row++) {
+        for(int row = 3; row < boardHeight; row++) {
             for(int col = 0; col < boardWidth - 3; col++) {
                 sequence = checkAdjacentNodes(player, row, col,-1,1);
                 if(sequence.size() == 4) {
@@ -131,7 +131,7 @@ public class GameBoard {
                 }
             }
         }
-        return true;
+        return false;
     }
 
     /**
