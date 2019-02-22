@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         //TODO: move game loop to GameEngine.java
+        //TODO: implement max turn limit
         //TODO: add ability to start a new game immediately after one has finished.
         //TODO: Add ability to reset the current game instead of exiting.
 
